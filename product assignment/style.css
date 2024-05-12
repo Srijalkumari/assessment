@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+.wrapper {
+  flex: 1;
+  padding-top: 60px;
+}
+
+.imageContainer {
+  padding-left: 60px;
+}
+
+.imageContainer img {
+  border-radius: 0.5rem;
+  width: 90%;
+}
+
+/* .imageContainer .morePic {
+  justify-content: space-between;
+} */
+
+.imageContainer .morePic img {
+  height: 120px;
+  width: 120px;
+  margin: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.textContainer {
+  padding: 10px;
+  width: 90%;
+}
+
+.textContainer .Marmeto p {
+  color: #b9bbbf;
+  margin-bottom: 0.6rem;
+}
+
+.textContainer h2::after {
+  content: "";
+  display: block;
+  margin-top: 13px;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+
+.textContainer .Price {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: center;
+}
+
+.textContainer .Price h3 {
+  color: #3a4980;
+  font-size: 1.8rem;
+}
+
+.textContainer .Price .discount {
+  color: #ff000080;
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.textContainer .originalPrice {
+  display: block;
+  color: #00000080;
+  margin-top: 5px;
+}
+
+.textContainer s::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+
+.colors {
+  margin-top: 20px;
+}
+
+.colors .option {
+  margin-bottom: 14px;
+  color: #b9bbbf;
+}
+
+.select {
+  display: flex;
+}
+
+.color-box {
+  width: 40px;
+  height: 40px;
+  margin-right: 22px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+}
+
+.color-selected {
+  background-color: #ffffff;
+}
+
+.color-tick {
+  width: 0;
+  height: 0;
+  border-top: 8px solid #ffffff;
+  border-right: 8px solid transparent;
+  position: relative;
+  top: -2px;
+}
+
+.textContainer .colors::after {
+  content: "";
+  display: block;
+  margin-top: 24px;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+
+.sizes {
+  margin-top: 20px;
+}
+
+.sizes .option {
+  margin-bottom: 14px;
+  color: #b9bbbf;
+}
+.size-option {
+  display: flex;
+  gap: 0.7rem;
+}
+.size {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: #f6f5f5;
+  color: #5c636e;
+  cursor: pointer;
+  position: relative;
+}
+.size p {
+  margin-left: 1.5rem;
+  color: #5c636e;
+}
+/* .size i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+} */
+.size::before {
+  content: "";
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-image: url("https://tse3.mm.bing.net/th?id=OIP._FugE6oAgkfH7ooqiVyBKgHaHa&pid=Api&P=0&h=220");
+  background-size: cover;
+  background-position: center;
+}
+.size:hover {
+  background-color: #dde6ed;
+}
+.size.selected{
+    background: #dde6ed;
+}
+.size.selected::before{
+    background-image: url('https://www.pngkey.com/png/full/11-112214_black-circle-png.png');
+}

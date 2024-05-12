@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Coffee Shop website</title>
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Main JavaScript-->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!--Header Section Design-->
+
+    <header class="header">
+      <a href="#" class="logo"><img src="coffeeshop--logo.jpg" /></a>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+        <a href="#blogs">Blogs</a>
+      </nav>
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+      </div>
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here" />
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+    </header>
+
+    <!--Home Section Design-->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Caffeine Chronicles: Where Every Cup Tells a Story</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quia
+          alias ab qui commodi totam earum.
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+        <a href="#menu" class="btn">Get Yours Now!</a>
+      </div>
+    </section>
+
+    <!--About Section Design-->
+    <section class="about" id="about">
+      <div class="row">
+        <div class="image">
+          <img
+            src="https://www.adamsandrussell.co.uk/wp-content/uploads/2018/08/coffee-types-explained-scaled.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <h1 class="heading"><span>About</span> Us</h1>
+          <h3>What Makes our Coffee Special?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+            earum reiciendis. Iste, pariatur? Ipsa veniam autem provident
+            cupiditate possimus maiores molestias! Cumque illum obcaecati enim
+            laboriosam vitae pariatur iusto, quo voluptate, perferendis harum
+            porro aut, suscipit earum. Nam accusamus in nisi, labore quae, nobis
+            quas dolor dolorum hic est numquam, quaerat ex ea eius perspiciatis
+            accusantium. Totam quia quam atque possimus cum voluptas perferendis
+            aut, minus sapiente perspiciatis quisquam quod libero nihil
+            laboriosam fugit fuga a voluptate rem. Non possimus sit quia
+            repudiandae libero unde laborum minus quasi nulla veritatis animi
+            aut, aliquid nesciunt ad? Facilis nihil tempora sequi ea?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A, sunt,
+            nemo quo eos ipsum consectetur placeat cum possimus reiciendis magni
+            assumenda. Inventore saepe alias dolore impedit, sunt illum omnis
+            odio dignissimos vitae nostrum eos laudantium atque explicabo
+            officia eveniet ex culpa sit aspernatur iste praesentium quae fuga!
+            Cum, corrupti eum.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Menu Section Design-->
+    <section class="menu" id="menu">
+      <!-- <h1 class="heading">Our <span>menu</span></h1> -->
+      <!-- <div class="box-container">
+        <div class="box">
+          <h3>Coffee</h3>
+
+          <div class="menu-item">
+            <ul>
+              <li>
+                <span class="item-name">Expresso</span
+                ><span class="item-price">...$3</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Cappacino</span
+                ><span class="item-price">...$4</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Latte</span
+                ><span class="item-price">...$4</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Americano</span
+                ><span class="item-price">...$3</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Mocha</span
+                ><span class="item-price">...$4</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Flat White</span
+                ><span class="item-price">...$2</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Short Black</span
+                ><span class="item-price">...$2</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Long Black</span
+                ><span class="item-price">...$2</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Teas</h3>
+          <div class="menu-item">
+            <ul>
+              <li>
+                <span class="item-name">Masala Tea</span
+                ><span class="item-price">...$2</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Green Tea</span
+                ><span class="item-price">...$2</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Black Tea</span
+                ><span class="item-price">...$2</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Lemon Tea</span
+                ><span class="item-price">...$2</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Bakery</h3>
+          <div class="menu-item">
+            <ul>
+              <li>
+                <span class="item-name">Cheese Cake</span
+                ><span class="item-price">...$7</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Donut</span
+                ><span class="item-price">...$5</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Muffin</span
+                ><span class="item-price">...$3</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Toast</span
+                ><span class="item-price">...$3</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Cookie</span
+                ><span class="item-price">...$2</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Egg Tart</span
+                ><span class="item-price">...$5</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Sandwiches</h3>
+          <div class="menu-item">
+            <ul>
+              <li>
+                <span class="item-name">Plain Sandwich</span
+                ><span class="item-price">...$3</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Cheese Sandwich</span
+                ><span class="item-price">...$4</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+
+              <li>
+                <span class="item-name">Grilled Sandwich</span
+                ><span class="item-price">...$4</span
+                ><a href="#" class="btn">Buy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="container">
+        <h1 class="text-center section-heading">OUR <span>MENU</span></h1>
+      </div>
+      <div class="container">
+        <div class="swiper menu-slider">
+          <div class="swiper-wrapper">
+            <!-- slide starts -->
+            <div class="swiper-slide menu-slide">
+              <div class="menu-slide-img">
+                <img
+                  src="https://www.milesteaandcoffee.com/userfiles/files/Espresso.jpg"
+                  alt="espresso"
+                />
+              </div>
+              <div class="menu-slide-content">
+                <h1 class="food-price">$5</h1>
+                <div class="menu-slide-content-bottom">
+                  <h2 class="food-name">Espresso</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- swiper ends -->
+
+            <!-- swiper starts -->
+            <div class="swiper-slide menu-slide">
+              <div class="menu-slide-img">
+                <img
+                  src="http://www.caffecoffea.com/wp-content/uploads/2015/02/Espresso-Mocha-2.jpg"
+                  alt="mocha"
+                />
+              </div>
+              <div class="menu-slide-content">
+                <h1 class="food-price">$5</h1>
+                <div class="menu-slide-content-bottom">
+                  <h2 class="food-name">Mocha</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- swiper ends -->
+
+            <!-- swiper starts -->
+            <div class="swiper-slide menu-slide">
+              <div class="menu-slide-img">
+                <img
+                  src="http://www.ffactor.com/wp-content/uploads/2018/08/AdobeStock_202756131.jpeg"
+                  alt="cappuccino"
+                />
+              </div>
+              <div class="menu-slide-content">
+                <h1 class="food-price">$5</h1>
+                <div class="menu-slide-content-bottom">
+                  <h2 class="food-name">Cappuccino</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- swiper ends -->
+
+            <!-- swiper starts -->
+            <div class="swiper-slide menu-slide">
+              <div class="menu-slide-img">
+                <img
+                  src="https://www.disneyfoodblog.com/wp-content/uploads/2016/08/Bubble-Milk-Tea_Joy-of-Tea_16-02.jpg"
+                  alt="boba tea"
+                />
+              </div>
+              <div class="menu-slide-content">
+                <h1 class="food-price">$5</h1>
+                <div class="menu-slide-content-bottom">
+                  <h2 class="food-name">Boba tea</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- swiper ends -->
+
+            <!-- swiper starts -->
+            <div class="swiper-slide menu-slide">
+              <div class="menu-slide-img">
+                <img
+                  src="https://www.funfoodfrolic.com/wp-content/uploads/2020/09/Cold-Coffee-Thumbnail.jpg"
+                  alt="cold coffee"
+                />
+              </div>
+              <div class="menu-slide-content">
+                <h1 class="food-price">$5</h1>
+                <div class="menu-slide-content-bottom">
+                  <h2 class="food-name">Cold Coffee</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- swiper ends -->
+
+            <!-- swiper starts -->
+            <div class="swiper-slide menu-slide">
+              <div class="menu-slide-img">
+                <img
+                  src="https://www.thespruceeats.com/thmb/_3Bk-1ktk3F2n716QhtxMigREvA=/6016x4016/filters:no_upscale():max_bytes(150000):strip_icc()/masala-chai-tea-854205640-9138f3466ed14374b89e63c7c5884329.jpg"
+                  alt="masala tea"
+                />
+              </div>
+              <div class="menu-slide-content">
+                <h1 class="food-price">$5</h1>
+                <div class="menu-slide-content-bottom">
+                  <h2 class="food-name">masala Tea</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- swiper ends -->
+
+            <!-- swiper starts -->
+            <div class="swiper-slide menu-slide">
+              <div class="menu-slide-img">
+                <img
+                  src="https://teabreakfast.com/wp-content/uploads/2020/05/Black-Tea-1-2048x1365.jpg"
+                  alt="black tea"
+                />
+              </div>
+              <div class="menu-slide-content">
+                <h1 class="food-price">$5</h1>
+                <div class="menu-slide-content-bottom">
+                  <h2 class="food-name">Black Tea</h2>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- slide ends -->
+          </div>
+
+          <div class="menu-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Review Section Design-->
+    <section class="review" id="review">
+      <h1 class="heading">Customer's <span>Review</span></h1>
+
+      <div class="box-container">
+        <div class="slide slide--1">
+          <div class="box-content">
+            <blockquote class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut
+              dolore impedit odit fugit repellendus, hic voluptatum optio
+              incidunt omnis voluptatibus alias quidem a provident id, sed
+              sapiente. Nostrum, earum.
+            </blockquote>
+            <address class="user">
+              <h3 class="user-name">Srijal Kumari</h3>
+              <img src="Srijalpic.jpg" class="user-img" alt="" />
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="box-content">
+            <blockquote class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut
+              dolore impedit odit fugit repellendus, hic voluptatum optio
+              incidunt omnis voluptatibus alias quidem a provident id, sed
+              sapiente. Nostrum, earum.
+            </blockquote>
+            <address class="user">
+              <h3 class="user-name">Sagar Pathak</h3>
+              <img src="th.jpg" class="user-img" alt="" />
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="box-content">
+            <blockquote class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut
+              dolore impedit odit fugit repellendus, hic voluptatum optio
+              incidunt omnis voluptatibus alias quidem a provident id, sed
+              sapiente. Nostrum, earum.
+            </blockquote>
+            <address class="user">
+              <h3 class="user-name">Sneha</h3>
+              <img
+                src="https://tse4.mm.bing.net/th?id=OIP.KjBHNtZnGzrtMELuD9BLwQHaEo&pid=Api&P=0&h=220"
+                class="user-img"
+                alt=""
+              />
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </address>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <!--Contact Section Design-->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> us</h1>
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224612.50220351925!2d77.15426260057724!3d28.40204232146534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc15f5a424b1%3A0xe4f50576c850e0f2!2sFaridabad%2C%20Haryana!5e0!3m2!1sen!2sin!4v1710599528948!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <form action="">
+          <h3>Get In Touch</h3>
+          <div class="inputbox">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="Name" />
+          </div>
+
+          <div class="inputbox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="E-mail" />
+          </div>
+
+          <div class="inputbox">
+            <span class="fas fa-phone"></span>
+            <input type="number" placeholder="Number" />
+          </div>
+          <input type="submit" value="Contact Now" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <!--Blogs Section Design-->
+    <section class="blogs" id="blogs">
+      <h1 class="heading">our <span>Blogs</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="blog-1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Brewed Brilliance</a>
+            <span>by admin / 21st jan, 2024</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus
+              nisi facere optio ex quos expedita libero repellendus corrupti
+              iusto?
+            </p>
+            ><a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="blog-2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Roast & Revel</a>
+            <span>by admin / 28th jan, 2024</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus
+              nisi facere optio ex quos expedita libero repellendus corrupti
+              iusto?
+            </p>
+            ><a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="blog-3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Cuppa Creativity</a>
+            <span>by admin / 4th feb, 2024</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus
+              nisi facere optio ex quos expedita libero repellendus corrupti
+              iusto?
+            </p>
+            ><a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="blog-4.jpg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">The Art of Aroma</a>
+            <span>by admin / 11th feb, 2024</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus
+              nisi facere optio ex quos expedita libero repellendus corrupti
+              iusto?
+            </p>
+            ><a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="blog-5.jpg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Latte Literature</a>
+            <span>by admin / 18th feb, 2024</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus
+              nisi facere optio ex quos expedita libero repellendus corrupti
+              iusto?
+            </p>
+            ><a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="blog-6.jpg" alt="" />
+          </div>
+          <div class="content">
+            <a href="#" class="title">Brewed Bliss Blog</a>
+            <span>by admin / 25th feb, 2024</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus
+              nisi facere optio ex quos expedita libero repellendus corrupti
+              iusto?
+            </p>
+            ><a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section design-->
+    <section class="footer">
+      <div class="credit">
+        created by <span>srijal kumari</span> | all rights reserved
+      </div>
+      <div class="arrow">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </section>
+
+    <!-- Swiper JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

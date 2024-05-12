@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Educational Website</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Main JavaScript-->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="header">
+      <a href="#" class="logo-img"
+        ><img
+          src="https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/06/education-logo-1002x1024.jpg"
+          alt=""
+      /></a>
+
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li>
+          <a href="#courses">Courses <i class="fa-solid fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <ul>
+              <li>
+                <a href="#development">Development <i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-development">
+                  <ul>
+                    <li><a href="#development">Web Development</a></li>
+                    <li><a href="#development">data science</a></li>
+                    <li><a href="#development">mobile Development</a></li>
+                    <li><a href="#development">programming languages</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#business">Business <i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-business">
+                  <ul>
+                    <li><a href="#business">Entrepreneurship</a></li>
+                    <li><a href="#business">E-business</a></li>
+                    <li><a href="#business">Sales</a></li>
+                    <li><a href="#business">management</a></li>
+                    <li><a href="#business">business strategy</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#design">Design <i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-design">
+                  <ul>
+                    <li><a href="#design">web design</a></li>
+                    <li><a href="#design">graphic design</a></li>
+                    <li><a href="#design">design tools</a></li>
+                    <li><a href="#design">game design</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#marketing">Marketing <i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-marketing">
+                  <ul>
+                    <li><a href="#marketing">digital marketing</a></li>
+                    <li><a href="#marketing">social media marketing</a></li>
+                    <li><a href="#marketing">branding</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#review">Review</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="icons">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+      </div>
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here" />
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+      <div class="log-in">
+        <button>sign up</button>
+        <button>log in</button>
+      </div>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Knowledge Hub: Your Gateway to Learning</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+          aliquid error sequi earum iste minima commodi dicta in. Et, nihil.
+        </p>
+        <a href="#" class="btn">start now</a>
+      </div>
+      <div class="home-img">
+        <img src="https://wallpaperaccess.com/full/6367119.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- course section -->
+    <section class="courses" id="courses">
+      <h3 class="heading">courses</h3>
+      <!-- Development -->
+      <div id="development">
+      <h4 class="sub-heading">Development :</h4>
+      <div class="swiper course-slider">
+        <div class="swiper-wrapper">
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://wallpapercave.com/wp/wp6350777.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">web development</h1>
+              <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <div class="course-pricing">
+                <h2 class="cur-price">$15 </h2>
+                <div class="original-price">$25</div>
+                <div class="countdown">
+                  <p class="para">offer ends in :</p>
+                  <p class="timer"></p>
+                </div>
+              </div>
+              <a href="#" class="buy-btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+                  
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://datasciencereview.com/wp-content/uploads/2019/12/Data-Science-ROI-7-Ways-to-Boost-It-scaled.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">data science</h1>
+                <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://wallpapercave.com/wp/wp9517044.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">mobile development</h1>
+                <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://www.wallpapertip.com/wmimgs/24-246645_programming-languages-wallpaper-hd.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">programming languages</h1>
+              <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+        </div>
+        <div class="swiper-button-next" ></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+      <!-- Business -->
+      <div id="business">
+      <h4 class="sub-heading">Business :</h4>
+      <div class="swiper course-slider">
+        <div class="swiper-wrapper">
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://t4.ftcdn.net/jpg/02/32/99/29/360_F_232992976_XE5XE4H2TlI6JeSo5B30rNreZKB7UVIr.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">Entrepreneurship</h1>
+              <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://wallpaperaccess.com/full/2593105.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">e-business</h1>
+                <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://wallpapers.com/images/hd/sales-digital-chart-nqk2bflsw5r1qxa6.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">sales</h1>
+                <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://wallpaperaccess.com/full/2132983.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">management</h1>
+              <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://wallpaperaccess.com/full/2479714.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">business strategy</h1>
+              <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+        </div>
+        <div class="swiper-button-next" ></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- Design -->
+    <div id="design">
+      <h4 class="sub-heading">Design :</h4>
+      <div class="swiper course-slider">
+        <div class="swiper-wrapper">
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://pinnacleeducation.ae/wp-content/uploads/2021/03/Web-Design-Course-for-Kids.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">web design</h1>
+              <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://wallpaperbat.com/img/151333-graphic-design-wallpaper-top-free-graphic-design-background.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">graphic design</h1>
+                <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/4217497/600/400/m2/fpnw/wm0/designer-tools_vector-05-.jpg?1522479856&s=bdf623c19470ea0b88c092d8fca0bea1" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">design tools</h1>
+                <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="http://hdqwalls.com/download/game-colorful-graphic-illustration-design-2s-3840x2160.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">game design</h1>
+              <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+        </div>
+        <div class="swiper-button-next" ></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- Marketing -->
+    <div id="marketing">
+      <h4 class="sub-heading">Marketing :</h4>
+      <div class="swiper course-slider">
+        <div class="swiper-wrapper">
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://wallpapercave.com/wp/wp3950094.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">digital marketing</h1>
+              <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://wallpapercave.com/wp/wp6626261.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">social media marketing</h1>
+                <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+          <!-- swiper start -->
+          <div class="swiper-slide course-slide">
+            <div class="course-slide-img">
+              <img src="https://wallpaperaccess.com/full/3818526.jpg" alt="">
+            </div>
+            <div class="course-slide-content">
+              <h2 class="course-name">branding</h1>
+                <h3 class="teacher">by XYZ</h3>
+              <div class="rating">
+                <span>4.5</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <h2 class="course-price">$25</h2>
+              <a href="#" class="btn">buy now</a>
+            </div>
+          </div>
+          <!-- swiper end -->
+        </div>
+        <div class="swiper-button-next" ></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    </section>
+
+    <!-- review section -->
+    <section class="review" id="review">
+      <h3 class="heading">review</h3>
+
+      <div class="testimonials">
+        <div class="testimonial-content">
+          <blockquote class="testimonal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nam nihil sunt vero eius, hic ea aut enim quasi similique!
+          </blockquote>
+          <address class="testimonial-author">
+            <img src="https://wallpapers.com/images/hd/pfp-pictures-cqjs3osvdljthh53.jpg" alt="" class="testimonial-avatar">
+            <div class="author-details">
+              <h4>john</h4>
+              <p>student, ABC institute</p>
+            </div>
+            <div class="author-icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </address>
+        </div>
+
+        <div class="testimonial-content">
+          <blockquote class="testimonal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nam nihil sunt vero eius, hic ea aut enim quasi similique!
+          </blockquote>
+          <address class="testimonial-author">
+            <img src="https://wallpapercave.com/wp/wp9569280.jpg" alt="" class="testimonial-avatar">
+            <div class="author-details">
+              <h4>sarah</h4>
+              <p>student, ABD institute</p>
+            </div>
+            <div class="author-icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </address>
+        </div>
+
+        <div class="testimonial-content">
+          <blockquote class="testimonal-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nam nihil sunt vero eius, hic ea aut enim quasi similique!
+          </blockquote>
+          <address class="testimonial-author">
+            <img src="https://wallpapers.com/images/file/anime-pfp-pictures-1ywaprlat3jy1n62.jpg" alt="" class="testimonial-avatar">
+            <div class="author-details">
+              <h4>anna</h4>
+              <p>student, MNO institute</p>
+            </div>
+            <div class="author-icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </address>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- blogs section -->
+    <section class="blogs" id="blogs">
+      <h3 class="heading">our blogs</h3>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  </body>
+</html>
