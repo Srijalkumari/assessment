@@ -543,6 +543,46 @@ section {
 
 /* contact section ends */
 
+/* footer section starts */
+
+.footer {
+  display: flex;
+  background: var(--bg-color);
+  /* border-top: var(--border); */
+  justify-content: space-between;
+}
+.footer .credit {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.footer .credit span {
+  text-transform: uppercase;
+  color:var(--primary-color);
+  font-size: 1.8rem;
+}
+.footer .arrow a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: var(--primary-color);
+  border: var(--border);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 3rem;
+  transition: 0.5s ease;
+}
+.footer .arrow a:hover {
+  background: #e7eaf6;
+  color: var(--text-color);
+  box-shadow: 0 0 1rem #f0ece2;
+}
+
+/* footer section ends */
+
 /* media queries */
 @media (max-width: 1440px) {
   html {
